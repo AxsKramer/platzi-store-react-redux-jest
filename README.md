@@ -1,2 +1,2 @@
-# platzi-store-react-redux-jest
-Project using react, redux and test with jest.
+# Platzi Store React Redux Jest
+Project using react, redux and testing with jest.

@@ -1,0 +1,42 @@
+{
+  "name": "platzi-store-react-redux-jest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --open --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AxsKramer/platzi-store-react-redux-jest.git"
+  },
+  "keywords": [],
+  "author": "Alexander Kramer <kramer.axs1@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AxsKramer/platzi-store-react-redux-jest/issues"
+  },
+  "homepage": "https://github.com/AxsKramer/platzi-store-react-redux-jest#readme",
+  "dependencies": {
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-redux": "7.2.2",
+    "react-router-dom": "5.2.0",
+    "redux": "4.0.5"
+  },
+  "devDependencies": {
+    "@babel/core": "7.12.10",
+    "@babel/preset-env": "7.12.10",
+    "@babel/preset-react": "7.12.10",
+    "babel-loader": "8.2.2",
+    "css-loader": "5.0.1",
+    "html-loader": "1.3.2",
+    "html-webpack-plugin": "4.5.0",
+    "mini-css-extract-plugin": "1.3.3",
+    "style-loader": "2.0.0",
+    "webpack": "4.41.2",
+    "webpack-cli": "3.3.10",
+    "webpack-dev-server": "3.11.0"
+  }
+}
