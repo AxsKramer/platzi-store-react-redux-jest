@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 const Header = props => (
   <div className="Header">
     <h1 className="Header-title">
-      <Link to="/"> Platzi Store </Link>
+      <Link to="/">Platzi Store</Link>
     </h1>
     <div className="Header-checkout">
       <Link to="/checkout">

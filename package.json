@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --open --mode development"
+    "start": "webpack-dev-server --open --mode development",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -18,9 +20,18 @@
     "url": "https://github.com/AxsKramer/platzi-store-react-redux-jest/issues"
   },
   "homepage": "https://github.com/AxsKramer/platzi-store-react-redux-jest#readme",
+  "jest": {
+    "verbose": true,
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/__test__/setupTest.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(styl|css)$": "<rootDir>/src/__mocks__/styleMock.js"
+    }
+  },
   "dependencies": {
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
     "react-redux": "7.2.2",
     "react-router-dom": "5.2.0",
     "redux": "4.0.5"
@@ -31,9 +42,14 @@
     "@babel/preset-react": "7.12.10",
     "babel-loader": "8.2.2",
     "css-loader": "5.0.1",
+    "enzyme": "3.11.0",
+    "enzyme-adapter-react-16": "1.15.5",
     "html-loader": "1.3.2",
     "html-webpack-plugin": "4.5.0",
+    "jest": "26.6.3",
+    "jest-fetch-mock": "3.0.3",
     "mini-css-extract-plugin": "1.3.3",
+    "react-test-renderer": "17.0.1",
     "style-loader": "2.0.0",
     "webpack": "4.41.2",
     "webpack-cli": "3.3.10",
